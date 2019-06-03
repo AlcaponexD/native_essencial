@@ -1,12 +1,13 @@
 import React , { Component } from 'react';
-import { View , Text , StyleSheet } from 'react-native';
+import { View , StyleSheet } from 'react-native';
+import Simples from './componentes/Simples';
 
 
 export default class App extends React.Component {
   render(){
     return(
       <View style={styles.container}>
-        <Text style={styles.f20}>React</Text>
+        <Simples />
       </View>
     )
   }
@@ -20,6 +21,6 @@ const styles  = StyleSheet.create({
     alignItems:'center'
   },
   f20:{
-    fontSize:40
+    fontSize:50
   }
-})
+});
